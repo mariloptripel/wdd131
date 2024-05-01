@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    color: #333333;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333333;
+    color: #FAFAFA;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card h2,
+.card p {
+    color: #333333;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.about-me,
+.web-dev-resources {
+    padding: 20px;
+}
+
+.about-me h2,
+.web-dev-resources h2 {
+    background-color: #333333;
+    color: #FAFAFA;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.about-me img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-me h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me .flag-image {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-me .description {
+    display: flex;
+    align-items: center;
+}
+
+.about-me .description p {
+    margin-right: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #FAFAFA;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer #currentyear {
+    font-weight: bold;
+}
