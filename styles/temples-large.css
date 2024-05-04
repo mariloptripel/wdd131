@@ -1,5 +1,54 @@
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 37.5em) {
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    nav ul li {
+        margin-right: 10px;
+    }
+    
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem; 
+        font-weight: bold;
+        padding: 10px 15px; 
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #FAFAFA;
+        color: #2c3e50;
+        font-weight: bold;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        max-width: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
     .imagegrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -9,4 +58,6 @@
     .imagegrid figure {
         width: 100%;
     }
+
+
 }
