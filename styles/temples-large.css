@@ -1,0 +1,12 @@
+
+@media only screen and (min-width: 769px) {
+    .imagegrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .imagegrid figure {
+        width: 100%;
+    }
+}
