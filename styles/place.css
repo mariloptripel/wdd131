@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #79BEE7; /* Light blue */
+    --secondary-color: #FFD700; /* Yellow */
+    --background-color: #FFFFFF; /* White */
+    --text-color: #000000; /* Black */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+}
+
+.info {
+    line-height: 1.5;
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
