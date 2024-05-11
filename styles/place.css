@@ -56,9 +56,6 @@ section h2 {
     position: relative;
   }
   
-  .weather .weather-icon {
-    display: none;
-  }
 
   .weather::after {
     content: "\1F31E"; 
@@ -66,6 +63,10 @@ section h2 {
     top: 10px;
     right: 10px;
     font-size: 24px;
+  }
+  
+  .weather .weather-icon {
+    display: none;
   }
 
 footer {
