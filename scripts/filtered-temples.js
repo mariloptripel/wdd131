@@ -88,6 +88,13 @@ const temples = [
         dedicated: "2019, March, 10",
         area: 41010,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/5-Rome-Temple-2160345.jpg"
+    },
+    {
+        templeName: "Buenos Aires Argentina",
+        location: "Buenos Aires, Argentina",
+        dedicated: "1986, January, 17",
+        area: 30659,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-airies-argentina-temple-1009069-wallpaper.jpg"
     }
 ];
 
