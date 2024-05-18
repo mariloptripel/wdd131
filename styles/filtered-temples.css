@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+    color: #000;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+#menu {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem .75rem;
+    background-color: #2c3e50;
+    color: #fafafa;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-size: 1rem;
+}
+
+/* Main & Grid */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.imagegrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+/* Temple Card */
+.imagegrid section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.imagegrid h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.imagegrid p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.imagegrid .label {
+    font-weight: bold;
+    color: #10253b;
+    font-size: 1.1em;
+}
+
+.imagegrid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 37.5em) {
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    nav ul li {
+        margin-right: 10px;
+    }
+    
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem; 
+        font-weight: bold;
+        padding: 10px 15px; 
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #34495e;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        max-width: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .imagegrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
