@@ -1,3 +1,25 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFAFA;
+    color: rgb(30, 28, 28);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(31, 31, 63); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+
 /* Form */
 form {
     background-color: #d2e4f3;
@@ -37,15 +59,34 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
-#overallRating label,
-#features label {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 10px; /* Add margin-bottom to create space between each label and input */
+button {
+    background-color: rgb(31, 31, 63); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#overallRating label{
+    display: inline-block;
+    font-weight: normal;
     font-size: 16px;
 }
 
-#overallRating label input,
-#features label input {
-    margin-right: 5px; /* Adjust margin between input and text */
+#features label {
+    font-weight: normal;
+}
+#features, #overallRating {
+    margin-bottom: 35px;
+}
+
+
+footer {
+    background-color: rgb(31, 31, 63); 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
