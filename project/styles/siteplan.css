@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Helvetica&display=swap');
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #E73000;
+}
+
+.secondary {
+    color: #8EB5AC;
+}
+
+.accent {
+    color: #EB6127;
+}
