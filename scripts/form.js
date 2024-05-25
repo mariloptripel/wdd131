@@ -39,7 +39,7 @@ function populateProductOptions() {
     const productNameSelect = document.getElementById('productName');
     products.forEach(product => {
         const option = document.createElement('option');
-        option.textContent = product.name; // Display product name
+        option.textContent = product.name; 
         productNameSelect.appendChild(option);
     });
 }
