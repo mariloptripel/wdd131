@@ -1,0 +1,98 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFAFA;
+    color: rgb(30, 28, 28);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(31, 31, 63); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(31, 31, 63); 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Form */
+form {
+    background-color: #d2e4f3;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(31, 31, 63); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#overallRating label,
+#features label {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#overallRating input[type="radio"],
+#features input[type="checkbox"] {
+    margin-right: 10px;
+    
+}
+
+#features input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#overallRating, #features{
+    margin-bottom: 35px;
+}

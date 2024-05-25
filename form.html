@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>Product Review</header>
+
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <label for="overallRating">Overall Rating</label>
+            <div id="overallRating">
+                <!-- Radio buttons will be populated dynamically with JavaScript -->
+            </div>
+
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required placeholder="mm/dd/yyyy">
+
+            <label>Which features did you find useful in this product? (Check all that apply)</label>
+            <div id="features">
+                <!-- Checkboxes will be populated dynamically with JavaScript -->
+            </div>
+
+            <label for="writtenReview">Written Review (optional)</label>
+            <textarea id="writtenReview" name="writtenReview" placeholder="Write your review here..."></textarea>
+
+            <label for="userName">Your Name (optional)</label>
+            <input type="text" id="userName" name="userName" placeholder="Your Name">
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span><br>
+            Marisol Lopez<br>
+            Argentina
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
