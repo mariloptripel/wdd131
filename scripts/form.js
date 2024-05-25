@@ -43,48 +43,6 @@ function populateProductOptions() {
         productNameSelect.appendChild(option);
     });
 }
-// Overall Rating Function
-function populateOverallRating() {
-    const overallRatingDiv = document.getElementById('overallRating');
-    const ratings = ['1', '2', '3', '4', '5'];
-
-    ratings.forEach(level => {
-        const input = document.createElement('input');
-        input.type = 'radio';
-        input.name = 'overallRating';
-        input.value = level;
-        input.required = true;
-
-        const starSymbol = '\u2605'; 
-        const label = document.createElement('label');
-        label.textContent = starSymbol.repeat(parseInt(level)); 
-
-        // Append radio button and label to overallRatingDiv
-        overallRatingDiv.appendChild(input);
-        overallRatingDiv.appendChild(label);
-    });
-}
-
-// Features Function
-function populateUsefulFeatures() {
-    const featuresDiv = document.getElementById('features');
-    const features = ['Design', 'Durability', 'Ease of Use', 'Performance'];
-
-    features.forEach(feature => {
-        const input = document.createElement('input');
-        input.type = 'checkbox';
-        input.name = 'usefulFeatures';
-        input.value = feature;
-
-        const label = document.createElement('label');
-        label.textContent = feature;
-
-        // Append checkbox and label to featuresDiv
-        featuresDiv.appendChild(input);
-        featuresDiv.appendChild(label);
-        featuresDiv.appendChild(document.createElement('br')); 
-    });
-}
 
 // Review counter Function
 function updateReviewCounter() {
@@ -103,6 +61,4 @@ document.getElementById('reviewForm').addEventListener('submit', function(event)
 
 
 populateProductOptions();
-populateOverallRating();
-populateUsefulFeatures();
 
