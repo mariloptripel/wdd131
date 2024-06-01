@@ -183,11 +183,20 @@ header nav ul li #contact-btn {
 
 /* cta */
 #cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 2rem;
 }
 
-#cta button {
+.cta-buttons {
+    margin: 50px;
+    display: flex;
+    gap: 400px; 
+}
+
+#reviews-btn,
+#signup-btn {
     background-color: #E73000;
     color: #FFFFFF;
     border: 2px solid #E73000;
@@ -196,9 +205,12 @@ header nav ul li #contact-btn {
     cursor: pointer;
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 100px;
 }
 
+#reviews-btn {
+    background-color: #EB6127;
+    border: 2px solid #EB6127;
+}
 
 /* footer*/
 footer {
