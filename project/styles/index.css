@@ -395,10 +395,10 @@ textarea {
     
     #menu {
         display: block; 
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-weight: 700;
         text-decoration: none;
-        padding: 1rem .75rem;
+        padding: 1rem;
         background-color: #E73000;
         color: #fafafa;
     }
@@ -414,7 +414,7 @@ textarea {
     
     .navigation.show a {
         display: block;
-        padding: 30px; 
+        padding: 25px; 
         color: #000000;
         font-weight: 700;
         transition: 0.5s;
