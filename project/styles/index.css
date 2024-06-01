@@ -1,5 +1,5 @@
 
-body, .review-body, .post-body {
+body, .review-body, .contact-body .post-body{
     font-family: 'Helvetica', sans-serif;
     background-color: #FAFAFA;
     color: #000000;
@@ -56,6 +56,8 @@ header nav ul li #contact-btn {
     padding: 1rem 3rem;
     border-radius: 5px;
 }
+
+
 
 /* Intro */
 #intro {
@@ -144,6 +146,7 @@ header nav ul li #contact-btn {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 30px;
+    font-weight: 600;
 }
 
 #tier1button{
@@ -291,7 +294,7 @@ textarea {
     height: 150px;
 }
 
-.review-body button {
+.review-body button, .contact-body button {
     background-color: #E73000;
     color: #FFFFFF;
     border: 2px solid #E73000;
@@ -369,8 +372,62 @@ textarea {
     padding: 2rem;
 }
 
-/* Estilos responsivos */
+/* Mobile view */
 @media (max-width: 768px) {
+    body h2 {
+        font-size: 3.5rem; 
+        margin-bottom: 1rem; 
+    }
+
+    body h3 {
+        font-size: 3.2rem; 
+        margin-bottom: 1rem; 
+    }
+
+    /* nav  */
+    /* Menú de hamburguesa */
+    .navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none; /* Oculta la lista inicialmente */
+    }
+    
+    #menu {
+        display: block; 
+        font-size: 4rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem .75rem;
+        background-color: #E73000;
+        color: #fafafa;
+    }
+    
+    #menu::before {
+        content: "≡";
+    }
+    
+    .navigation.show {
+        display: block;
+        text-align: right; 
+    }
+    
+    .navigation.show a {
+        display: block;
+        padding: 30px; 
+        color: #000000;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: 1.8rem;
+    }
+    
+    #menu.show::before {
+        content: "X";
+        font-size: 1rem;
+    }
+
+
+    /* Intro section */
     #intro {
         flex-direction: column;
         align-items: center;
@@ -378,24 +435,95 @@ textarea {
 
     #intro img#logo {
         margin-bottom: 1rem;
+        width: 60%; 
+        height: auto    ;
+    }
+    #imagetabs{
+        width: 100%;
     }
 
-    #intro div {
-        text-align: center;
+    #intro p {
+        font-size: 1rem; 
+        margin-bottom: 1.5rem;
+        text-align: center; 
     }
 
     #intro button {
-        margin-top: 1rem;
+        margin-top: 1.5rem; 
+        padding: 0.5rem 1rem; 
+        margin-bottom: 60px;
     }
-    
-    #suscriptions {
-        display: flex; 
-        justify-content: space-between; 
-        flex-wrap: wrap; 
+
+    /* Subscriptions section */
+
+    #intro-suscriptions img {
+        width: 100%;
+    }
+
+    #suscriptions h2 {
+        margin: 0.5rem 0;
+        text-align: center; 
+    }
+    .suscription h3{
+        font-size: 2.4rem;
+    }
+    .suscription p{
+        font-size: 1rem;
+        letter-spacing: 50%;
+    }
+
+    #suscriptiontiers {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .suscription {
-        flex: 1 1 calc(33.33% - 2rem); 
+        max-width: 60%;
+        margin-bottom: 0.5rem; 
+        text-align: center; 
+    }
+
+
+    #tier1button,
+    #tier2button,
+    #tier3button {
+        margin: 1rem auto; 
+    }
+
+    /* About us section */
+    #aboutus {
+        flex-direction: column-reverse; 
+    }
+
+    #aboutus img {
+        width: 80%; 
+        margin-bottom: 1rem; 
+    }
+
+    #aboutus #aboutustext {
+        padding: 0 0rem; 
+    }
+
+    /* CTA section */
+    .cta-buttons {
+        flex-direction: column; 
+        gap: 3rem; 
+    }
+
+    #reviews-btn,
+    #signup-btn {
+        width: 80%; 
+        padding: 1rem;
+    }
+
+    /******* Contact section ******/
+    .contact-body p{
+        font-size: 1.1rem;
+    }
+
+    .contact-body h2{
+        font-size: 4rem;
     }
 
     .contact-content {
@@ -404,6 +532,88 @@ textarea {
     }
 
     .contact-image img {
-        max-width: 100%;
+        max-width: 80%; 
     }
-}
+
+    .contact-text {
+        padding: 0 1rem; 
+    }
+
+    .contact-text p {
+        margin-bottom: 1rem; 
+        text-align: center; 
+    }
+
+    /* Contact form */
+
+    .cont
+    form {
+        max-width: 60%; 
+        margin: 2rem auto; 
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 1rem; 
+    }
+
+    button[type="submit"] {
+        width: 90%; 
+        margin-top: 1rem; 
+    }
+
+    /***** Customer reviews section ********/
+    .reviews-container {
+        flex-direction: column; 
+    }
+
+    .review {
+        width: 75%; 
+        padding: 0;
+    }
+
+    .profile-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 0rem; /* Adjust spacing */
+    }
+
+    .review-content {
+        text-align: center; /* Center align the content */
+    }
+
+    .review-body h2 {
+        margin-bottom: 0.5rem; /* Adjust spacing */
+        font-size: 3rem;
+    }
+
+    /* Add review section */
+    #add-review form {
+        max-width: 70%; /* Adjust maximum width of the form */
+        margin: 2rem auto; /* Center and adjust spacing */
+        font-size: smaller;
+    }
+
+    #overallRating {
+        margin-bottom: 1.5rem; /* Adjust spacing */
+    }
+
+    #overallRating label {
+        margin-bottom: 0.3rem; /* Adjust spacing */
+    }
+
+    .rating-stars {
+        justify-content: center; /* Center align the stars */
+    }
+
+    textarea {
+        height: 120px; /* Adjust height of the textarea */
+    }
+
+    button[type="submit"] {
+        width: 80%; /* Adjust button width */
+    }
+    }
