@@ -1,5 +1,5 @@
 
-body {
+body, .review-body, .post-body {
     font-family: 'Helvetica', sans-serif;
     background-color: #FAFAFA;
     color: #000000;
@@ -19,7 +19,6 @@ h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.3rem;
     font-weight: 600;
-    
 }
 
 
@@ -203,7 +202,7 @@ header nav ul li #contact-btn {
 
 /* footer*/
 footer {
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     background-color: #000000;
     color: #FFFFFF;
@@ -211,6 +210,151 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+/***** REVIEWS PAGE********/
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.review-content h3{
+    font-size: 1.7rem;
+}
+.review-body h2{
+    margin-left: 30px;
+}
+.review {
+    width: 40%;
+    display: flex;
+    font-size: 1.1rem;
+    padding: 6em;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px; 
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-content {
+    flex: 1;
+}
+
+/* Form */
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; 
+    margin: 90px auto;
+    color: #FAFAFA;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.review-body button {
+    background-color: #E73000;
+    color: #FFFFFF;
+    border: 2px solid #E73000;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+#overallRating {
+    margin-bottom: 30px;
+}
+
+#overallRating label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+.rating-stars {
+    display: flex;
+}
+
+.rating-stars input[type="radio"] {
+    margin-right: 10px; 
+}
+
+/***** POST PAGE********/
+.post-body{
+    text-align: center;
+    padding: 3rem;
+    line-height: 5rem;
+}
+#back-button {
+    background-color: #E73000;
+    color: #FFFFFF;
+    border: 2px solid #E73000;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 50px;
+}
+
+
+
+/***** CONTACT PAGE********/
+#contact-section {
+    padding: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-text p{
+    font-size: 1.7em;
+    padding: 2rem;
 }
 
 /* Estilos responsivos */
@@ -233,12 +377,21 @@ footer p {
     }
     
     #suscriptions {
-        display: flex; /* Use flexbox */
-        justify-content: space-between; /* Distribute items evenly */
-        flex-wrap: wrap; /* Wrap items to next line if necessary */
+        display: flex; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
     }
 
     .suscription {
-        flex: 1 1 calc(33.33% - 2rem); /* Each tier takes up 1/3 of the available space minus margins */
+        flex: 1 1 calc(33.33% - 2rem); 
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image img {
+        max-width: 100%;
     }
 }

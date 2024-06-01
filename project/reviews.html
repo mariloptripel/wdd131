@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRL TAV Reviews - WDD 131 Final Project</title>
+    <meta name="description" content="WDD 131 - Website Final Project - Review Page">
+    <meta name="author" content="Marisol Lopez">
+    <script src="scripts/reviews.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="review-body">
+    <header>
+        <nav>
+            <img src="images/icon.png" alt="CTRL TAV Icon" id="icon">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#plans">SUBSCRIPTIONS</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="contact.html" id="contact-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section id="customer-reviews">
+        <h2>WHAT USERS THINK.</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <img src="images/riley.png" alt="Riley profile" class="profile-image" loading="lazy">
+                <div class="review-content">
+                    <h3>Riley Smith</h3>
+                    <p>"CTRL TAV was super useful! Their beginner subscription got me started in localization, and the expert feedback I got later on really boosted my skills. Easy-to-use platform and tons of useful content. Highly recommend!"</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="images/luca.png" alt="Luca profile" class="profile-image" loading="lazy">
+                <div class="review-content">
+                    <h3>Luca Rossi</h3>
+                    <p>"Service was 10/10. The complete plan had everything I needed, and the personalized support was a game-changer. Seriously, if you're serious about localization, CTRL TAV will give you a huge boost."</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="images/taylor.png" alt="Taylor profile" class="profile-image" loading="lazy">
+                <div class="review-content">
+                    <h3>Taylor Martinez</h3>
+                    <p>"Shoutout to CTRL TAV for getting me started in localization! The beginner plan made it easy to learn, and the community support was awesome. Can't thank them enough for helping me kickstart my career!"</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="images/aiden.png" alt="Aiden profile" class="profile-image" loading="lazy">
+                <div class="review-content">
+                    <h3>Aiden Miller</h3>
+                    <p>"CTRL TAV is a lifesaver for our team. The enterprise plan gave us all the tools we needed to tackle big localization projects. The support team is top-notch. Highly recommend for any company looking to level up their localization game."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="add-review">
+        <h2>HOW WAS YOUR EXPERIENCE?.</h2>
+        <form id="reviewform" method="get" action="post.html">
+            <div>
+                <label for="customer-name">Your Name</label>
+                <input type="text" id="customer-name" name="customer-name" placeholder="Your Name" required>
+            </div>
+            <label for="productName">Subscription Tier</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select your subscription...</option>
+            </select>
+            <div id="overallRating">
+                <label for="rating">Overall Rating</label>
+                <div class="rating-stars">
+                    <input type="radio" id="rating1" name="overallRating" value="1" required>
+                    <label for="rating1">☆</label>
+                    <input type="radio" id="rating2" name="overallRating" value="2" required>
+                    <label for="rating2">☆☆</label>
+                    <input type="radio" id="rating3" name="overallRating" value="3" required>
+                    <label for="rating3">☆☆☆</label>
+                    <input type="radio" id="rating4" name="overallRating" value="4" required>
+                    <label for="rating4">☆☆☆☆</label>
+                </div>
+            </div>            
+            <div>
+                <label for="review-body">Your Review:</label>
+                <textarea id="review-body" name="review-body" rows="5" placeholder="Write your review here..." required></textarea>
+            </div>
+            <button type="submit">POST REVIEW</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>
+        <span id="currentyear"></span><br>
+        CTRL TAV. All rights reserved.<br>
+        Argentina
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>

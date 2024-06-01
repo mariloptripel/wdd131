@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRL TAV Contact Us - WDD 131 Final Project</title>
+    <meta name="description" content="WDD 131 - Website Final Project - Contact Page">
+    <meta name="author" content="Marisol Lopez">
+    <script src="scripts/reviews.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="review-body">
+    <header>
+        <nav>
+            <img src="images/icon.png" alt="CTRL TAV Icon" id="icon">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#plans">SUBSCRIPTIONS</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="contact.html" id="contact-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section id="contact-section">
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="images/contactus.png" alt="Repeated computer screens" id="screens" loading="lazy">
+            </div>
+            <div class="contact-text">
+                <h2>CONTACT US</h2>
+                <p>We'd love to hear from you! Whether you have a question about our services, need assistance, or information about our translation services or resources, feel free to get in touch. Unlock your potential with CTRL TAV. Reach out to us and let's make great things happen together!</p>
+            </div>
+        </div>
+        <form id="contact-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div>
+                <label for="subscription">Subscription Plan</label>
+                <select id="subscription" name="subscription" required>
+                    <option value="" disabled selected>Select your subscription...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit">Contact Us</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>
+        <span id="currentyear"></span><br>
+        CTRL TAV. All rights reserved.<br>
+        Argentina
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
