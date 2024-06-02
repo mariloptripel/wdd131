@@ -303,10 +303,10 @@ footer p {
     margin-left: 30px;
 }
 .review {
-    width: 30%;
+    width: 35%;
     display: flex;
     font-size: 1.1rem;
-    padding: 4em;
+    padding: 5em;
 }
 
 .profile-image {
