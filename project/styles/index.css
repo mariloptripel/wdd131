@@ -217,7 +217,9 @@ header nav ul li #contact-btn {
 
 /* footer*/
 footer {
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: #000000;
     color: #FFFFFF;
@@ -225,6 +227,26 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-right a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
+}
+
+#facebook img{
+    width: 15px;
 }
 
 /***** REVIEWS PAGE********/
@@ -469,7 +491,7 @@ textarea {
     }
     .suscription p{
         font-size: 1rem;
-        letter-spacing: 50%;
+        letter-spacing: 1px;
     }
 
     #suscriptiontiers {
@@ -546,9 +568,8 @@ textarea {
 
     /* Contact form */
 
-    .cont
-    form {
-        max-width: 60%; 
+    .contact-body form {
+        max-width: 80%; 
         margin: 2rem auto; 
     }
 
@@ -561,9 +582,11 @@ textarea {
         padding: 1rem; 
     }
 
-    button[type="submit"] {
-        width: 90%; 
+    .contact-body button[type="submit"] {
+        font-size: 2rem;
+        width: 80%; 
         margin-top: 1rem; 
+        padding: 0.5rem 1rem; 
     }
 
     /***** Customer reviews section ********/
@@ -615,5 +638,20 @@ textarea {
 
     button[type="submit"] {
         width: 80%; /* Adjust button width */
+    }
+ /***** footer********/
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .footer-right a {
+        margin: 10px;
     }
     }
