@@ -135,19 +135,10 @@ header nav ul li #contact-btn {
 }
 
 #suscriptions .suscription h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
-#tier1button, #tier2button, #tier3button {
-    color: #FFFFFF;
-    padding: 1rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 30px;
-    font-weight: 600;
-}
 
 #tier1button{
     background-color: #E73000;
@@ -192,10 +183,53 @@ header nav ul li #contact-btn {
     text-align: center;
 }
 
+/* buttons */
 .cta-buttons {
     margin: 50px;
     display: flex;
     gap: 400px; 
+}
+
+#intro a.button,
+#reviews-btn, #signup-btn {
+    display: inline-block;
+    background-color: #E73000;
+    color: #FFFFFF;
+    border: 2.5px solid #E73000;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#tier1button, #tier2button, #tier3button {
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#tier1button{
+    background-color: #E73000;
+    border-color: #E73000;
+}
+
+#tier2button{
+    background-color: #EB6127;
+    border-color: #EB6127;
+}
+
+#tier3button{
+    background-color: #8EB5AC;
+    border-color: #8EB5AC;
 }
 
 #reviews-btn,
@@ -213,6 +247,12 @@ header nav ul li #contact-btn {
 #reviews-btn {
     background-color: #EB6127;
     border: 2px solid #EB6127;
+}
+
+#intro a.button {
+    background-color: #fafafa;
+    color: black;
+    border: 2px solid black;
 }
 
 /* footer*/
@@ -600,44 +640,44 @@ textarea {
     }
 
     .profile-image {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 0rem; /* Adjust spacing */
+        margin-right: 0;
+        margin-bottom: 0rem; 
     }
 
     .review-content {
-        text-align: center; /* Center align the content */
+        text-align: center; 
     }
 
     .review-body h2 {
-        margin-bottom: 0.5rem; /* Adjust spacing */
+        margin-bottom: 0.5rem; 
         font-size: 3rem;
     }
 
     /* Add review section */
     #add-review form {
-        max-width: 70%; /* Adjust maximum width of the form */
-        margin: 2rem auto; /* Center and adjust spacing */
+        max-width: 70%; 
+        margin: 2rem auto; 
         font-size: smaller;
     }
 
     #overallRating {
-        margin-bottom: 1.5rem; /* Adjust spacing */
+        margin-bottom: 1.5rem; 
     }
 
     #overallRating label {
-        margin-bottom: 0.3rem; /* Adjust spacing */
+        margin-bottom: 0.3rem; 
     }
 
     .rating-stars {
-        justify-content: center; /* Center align the stars */
+        justify-content: center; 
     }
 
     textarea {
-        height: 120px; /* Adjust height of the textarea */
+        height: 120px; 
     }
 
     button[type="submit"] {
-        width: 80%; /* Adjust button width */
+        width: 80%; 
     }
  /***** footer********/
     footer {
